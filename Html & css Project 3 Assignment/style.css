@@ -1,0 +1,125 @@
+/* universal code */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 1rem 2rem;
+}
+/* ******* */
+
+/* start header section */
+header{
+    width: 100%;
+    background-color: black;
+    height: auto;
+    border-radius: 4rem 4rem 0 0;
+    -webkit-border-radius: 4rem 4rem 0 0;
+    -moz-border-radius: 4rem 4rem 0 0;
+    -ms-border-radius: 4rem 4rem 0 0;
+    -o-border-radius: 4rem 4rem 0 0;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.logo{
+    width: 20%;
+    position: relative;
+}
+.logo::after{
+    content: "";
+    border-left: 2px solid white;
+    top: 20%;
+    aspect-ratio: 1;
+    position: absolute;
+    width: 10%;
+    right: 10%;
+}
+.menubar{
+    width: 60%;
+}
+nav .logo img{
+    height: 50px;
+}
+nav ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+}
+.btn{
+    width: 20%;
+    text-align: right;
+}
+button{
+    text-transform: capitalize;
+    padding: .5rem 1rem;
+    color: white;
+    background-color: blueviolet;
+    border-radius: .6rem;
+    -webkit-border-radius: .6rem;
+    -moz-border-radius: .6rem;
+    -ms-border-radius: .6rem;
+    -o-border-radius: .6rem;
+}
+/* end header section */
+
+/* start main section */
+main{
+    background-image: url(./Assests/bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 87vh;
+    border-radius: 0 0 4rem 4rem;
+    -webkit-border-radius: 0 0 4rem 4rem;
+    -moz-border-radius: 0 0 4rem 4rem;
+    -ms-border-radius: 0 0 4rem 4rem;
+    -o-border-radius: 0 0 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.hero-section h1{
+    text-transform: capitalize;
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+}
+.hero-section p{
+    margin: .7rem 0 3rem 0;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+.hero-section button{
+    font-size: 1.3rem;
+    padding: 1rem 2rem;   
+    font-weight: bold; 
+
+}
+/* end main section */
